@@ -1,0 +1,69 @@
+/*!
+ * Start Bootstrap - Business Frontpage HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+	padding-top: 50px;
+	background-color: whitesmoke;
+	color: darkslategrey;
+	/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.business-header {
+	height: 400px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+
+/* Customize the text color and shadow color and to optimize text legibility. */
+
+.tagline {
+	text-shadow: 0 0 10px #000;
+	color: #fff;
+}
+
+.colorbg {
+	background-color: yellow;
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+footer {
+	width: 100%;
+	margin: 50px 0;
+}
+
+footer .row {
+	margin: 0;
+}
+div .colordiv{
+	background-color: greenyellow;
+	 border: 3px greenyellow; /* стили рамки */
+ -moz-border-radius: 10px; /* закругление для старых Mozilla Firefox */
+ -webkit-border-radius: 10px; /* закругл. для старых Chrome и Safari */
+ -khtml-border-radius:10px; /* закругл. для браузера Konquerer системы Linux */
+ border-radius: 10px; /* закругление углов для всех, кто понимает */
+}
+
+div .colordiv2 {
+	background-color: darkcyan;
+	 border: 3px darkcyan; /* стили рамки */
+	-moz-border-radius: 10px; /* закругление для старых Mozilla Firefox */
+ -webkit-border-radius: 10px; /* закругл. для старых Chrome и Safari */
+ -khtml-border-radius:10px; /* закругл. для браузера Konquerer системы Linux */
+ border-radius: 10px; /* закругление углов для всех, кто понимает */
+}
+
+.stl1 {
+	color: whitesmoke;
+}
