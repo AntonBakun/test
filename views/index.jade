@@ -96,7 +96,7 @@ html(lang='en', ng-app='myApp', ng-controller='myOrder')
       .colordiv
         .row
           .col-sm-12
-            .col-sm-6(align='center')
+            .col-sm-12(align='center')
               h2.stl1
                 span.fa.fa-phone
                 | +375 33 559 6580
@@ -153,14 +153,9 @@ html(lang='en', ng-app='myApp', ng-controller='myOrder')
                   textarea.form-control(name='Message', placeholder='Please input more information about your location', ng-model='description')
               .form-group
                 .col-sm-offset-9.col-sm-3
-                  button.btn.btn-success(type='submit')  Order Now! 
+                  button.btn.btn-success(type='submit')  Order Now!
               .col-sm-12
-                p From:{{from}}
-                p To:{{to}}
-                p Phone:{{phone}}
-                p Name:{{name}}
-                p vehicle:{{vehicle}}
-                p Message:{{description}}
+
           .col-sm-6
             .row
               ul.thumbnails
@@ -190,18 +185,18 @@ html(lang='en', ng-app='myApp', ng-controller='myOrder')
               .col-sm-6
                 .st1
                   div
-                    img(src='img/logo.png', width='126', height='61', alt='')
-                  | 								© 2016 
+                    img(src='images/logo.png', width='126', height='61', alt='')
+                  | 								пїЅ 2016 
                   a(href='#') Privacy Policy
                 |  Website designed by
               .col-sm-6(align='left')
-                a.btn.btn-social-icon.btn-md.btn-vk
+                a.btn.btn-social-icon.btn-lg.btn-vk
                   span.icon-vk
-                a.btn.btn-social-icon.btn-md.btn-facebook
+                a.btn.btn-social-icon.btn-lg.btn-facebook
                   span.icon-facebook
-                a.btn.btn-social-icon.btn-md.btn-instagram
+                a.btn.btn-social-icon.btn-lg.btn-instagram
                   span.icon-instagram
-                a.btn.btn-social-icon.btn-md.btn-google
+                a.btn.btn-social-icon.btn-lg.btn-google
                   span.icon-gplus
                 br
                 h3
@@ -223,9 +218,9 @@ html(lang='en', ng-app='myApp', ng-controller='myOrder')
           .modal-content
             .modal-header
               button.close(type='button', data-dismiss='modal') x
-              h4#myModalLabel.modal-title Форма обратной связи
+              h4#myModalLabel.modal-title text
             .modal-body
-              h3 ТИПА Форма
+              h3 text
             .modal-footer
-              button.btn.btn-default(type='button', data-dismiss='modal') Закрыть
-              button.btn.btn-primary(type='button') Отправить форму
+              button.btn.btn-default(type='button', data-dismiss='modal') Text
+              button.btn.btn-primary(type='button') Text
