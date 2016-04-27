@@ -10,6 +10,6 @@ app.controller('myOrder', function ($scope) {
 	$scope.from = "";
 	$scope.car = "";
 	$scope.bus = "";
-	$scope.vechile "";
+	$scope.vechile="";
 	$scope.discription = "";
 });

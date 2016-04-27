@@ -5,12 +5,12 @@ var mongoose = require('mongoose');
 
 
 /* DB connection */
-mongoose.connect('mongodb://<taxiserver>:<servertaxi>@ds019491.mlab.com:19491/db_service');
+mongoose.connect('mongodb://taxiserver:servertaxi@ds019491.mlab.com:19491/db_service');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
-db.once('open', function  (){
+db.once('open', function callback (){
 	console.log("succesful database connection");
 });
 
