@@ -1,0 +1,710 @@
+v8-version,4,5,103,35,0
+shared-library,"C:\Program Files\nodejs\node.exe",0x00c50000,0x0179c000
+shared-library,"C:\Windows\SYSTEM32\ntdll.dll",0x77c40000,0x77d82000
+shared-library,"C:\Windows\system32\kernel32.dll",0x772e0000,0x773b5000
+shared-library,"C:\Windows\system32\KERNELBASE.dll",0x75ed0000,0x75f1b000
+shared-library,"C:\Windows\System32\SYSFER.DLL",0x75b20000,0x75b8e000
+shared-library,"C:\Windows\system32\WS2_32.dll",0x76d90000,0x76dc5000
+shared-library,"C:\Windows\system32\msvcrt.dll",0x77950000,0x779fc000
+shared-library,"C:\Windows\system32\RPCRT4.dll",0x75f30000,0x75fd2000
+shared-library,"C:\Windows\system32\NSI.dll",0x777d0000,0x777d6000
+shared-library,"C:\Windows\system32\WINMM.dll",0x724c0000,0x724f2000
+shared-library,"C:\Windows\system32\USER32.dll",0x77080000,0x77149000
+shared-library,"C:\Windows\system32\GDI32.dll",0x77db0000,0x77dfe000
+shared-library,"C:\Windows\system32\LPK.dll",0x77070000,0x7707a000
+shared-library,"C:\Windows\system32\USP10.dll",0x777e0000,0x7787d000
+shared-library,"C:\Windows\system32\ADVAPI32.dll",0x76fc0000,0x77061000
+shared-library,"C:\Windows\SYSTEM32\sechost.dll",0x76fa0000,0x76fb9000
+shared-library,"C:\Windows\system32\IPHLPAPI.DLL",0x71480000,0x7149c000
+shared-library,"C:\Windows\system32\WINNSI.DLL",0x71470000,0x71477000
+shared-library,"C:\Windows\system32\PSAPI.DLL",0x77da0000,0x77da5000
+shared-library,"C:\Windows\system32\USERENV.dll",0x75c80000,0x75c97000
+shared-library,"C:\Windows\system32\profapi.dll",0x75c10000,0x75c1b000
+shared-library,"C:\Windows\system32\IMM32.DLL",0x76d70000,0x76d8f000
+shared-library,"C:\Windows\system32\MSCTF.dll",0x77880000,0x7794c000
+shared-library,"C:\Windows\system32\mswsock.dll",0x75560000,0x7559c000
+shared-library,"C:\Windows\System32\wshtcpip.dll",0x75080000,0x75085000
+shared-library,"C:\Windows\System32\wship6.dll",0x75550000,0x75556000
+shared-library,"C:\Windows\system32\CRYPTSP.dll",0x755a0000,0x755b7000
+shared-library,"C:\Windows\system32\rsaenh.dll",0x75340000,0x7537b000
+shared-library,"C:\Windows\system32\CRYPTBASE.dll",0x75a80000,0x75a8c000
+shared-library,"C:\Windows\system32\dbghelp.dll",0x6db30000,0x6dc1b000
+profiler,"begin",1
+timer-event-start,"V8.GCCompactor",114000
+timer-event-start,"V8.External",114000
+timer-event-end,"V8.External",114000
+timer-event-start,"V8.External",116000
+timer-event-end,"V8.External",116000
+timer-event-end,"V8.GCCompactor",116000
+tick,0xdbbdd1,116000,0,0x0,4
+code-creation,Stub,2,0x32d0a000,386,"ArrayNArgumentsConstructorStub"
+code-creation,Stub,2,0x32d0a1a0,331,"CEntryStub"
+code-creation,Stub,2,0x32d0a300,394,"ArraySingleArgumentConstructorStub"
+code-creation,Stub,2,0x32d0a4a0,170,"DoubleToIStub"
+code-creation,Stub,2,0x32d0a560,330,"InternalArrayNArgumentsConstructorStub"
+code-creation,Handler,3,0x32d0a6c0,88,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d0a720,208,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d0a800,1785,"RecordWriteStub"
+code-creation,Stub,2,0x32d0af00,197,"StoreBufferOverflowStub"
+code-creation,Stub,2,0x32d0afe0,1813,"RecordWriteStub"
+code-creation,Stub,2,0x32d0b700,1032,"BinaryOpWithAllocationSiteStub"
+code-creation,Stub,2,0x32d0bb20,172,"DoubleToIStub"
+code-creation,Handler,3,0x32d0bbe0,208,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d0bcc0,208,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d0bda0,420,"BinaryOpICStub"
+code-creation,Stub,2,0x32d0bf60,172,"DoubleToIStub"
+code-creation,Stub,11,0x32d0c020,300,"BinaryOpICStub"
+code-creation,Handler,3,0x32d0c160,116,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d0c1e0,1785,"RecordWriteStub"
+code-creation,Stub,2,0x32d0c8e0,394,"InternalArraySingleArgumentConstructorStub"
+code-creation,Handler,3,0x32d0ca80,88,"An IC handler from the snapshot"
+code-creation,CallIC,8,0x32d0cae0,400,"A call IC from the snapshot"
+code-creation,Builtin,4,0x32d0cc80,266,"ArgumentsAdaptorTrampoline"
+code-creation,Stub,2,0x32d0cda0,251,"CEntryStub"
+code-creation,Stub,2,0x32d0cea0,261,"CreateWeakCellStub"
+code-creation,Stub,2,0x32d0cfc0,1817,"RecordWriteStub"
+code-creation,Stub,2,0x32d0d6e0,1785,"RecordWriteStub"
+code-creation,Stub,2,0x32d0dde0,1789,"RecordWriteStub"
+code-creation,Handler,3,0x32d0e4e0,164,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d0e5a0,233,"StoreArrayLiteralElementStub"
+code-creation,Stub,2,0x32d0e6a0,1448,"RecordWriteStub"
+code-creation,Stub,2,0x32d0ec60,97,"StoreBufferOverflowStub"
+code-creation,Handler,3,0x32d0ece0,76,"An IC handler from the snapshot"
+code-creation,CallIC,8,0x32d0ed40,400,"A call IC from the snapshot"
+code-creation,Stub,11,0x32d0eee0,385,"BinaryOpICStub"
+code-creation,Handler,3,0x32d0f080,88,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d0f0e0,361,"BinaryOpICStub"
+code-creation,Handler,3,0x32d0f260,76,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d0f2c0,84,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d0f320,94,"BinaryOpICStub"
+code-creation,Stub,11,0x32d0f380,301,"BinaryOpICStub"
+code-creation,Handler,3,0x32d0f4c0,84,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d0f520,611,"RecordWriteStub"
+code-creation,Stub,11,0x32d0f7a0,389,"BinaryOpICStub"
+code-creation,Handler,3,0x32d0f940,164,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d0fa00,94,"BinaryOpICStub"
+code-creation,Stub,2,0x32d0fa60,196,"CallFunctionStub"
+code-creation,Stub,2,0x32d0fb40,285,"ArrayNoArgumentConstructorStub"
+code-creation,Stub,2,0x32d0fc60,790,"StoreFastElementStub"
+code-creation,Stub,2,0x32d0ff80,1800,"RecordWriteStub"
+code-creation,Handler,3,0x32d106a0,88,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d10700,740,"NameDictionaryLookupStub"
+code-creation,CallIC,8,0x32d10a00,78,"A call IC from the snapshot"
+code-creation,CallIC,8,0x32d10a60,279,"A call IC from the snapshot"
+code-creation,Stub,2,0x32d10b80,224,"ArrayConstructorStub"
+code-creation,Stub,2,0x32d10c60,273,"ArrayNoArgumentConstructorStub"
+code-creation,Stub,2,0x32d10d80,293,"ArrayNoArgumentConstructorStub"
+code-creation,Stub,2,0x32d10ec0,293,"ArrayNoArgumentConstructorStub"
+code-creation,Stub,2,0x32d11000,261,"ArrayNoArgumentConstructorStub"
+code-creation,Stub,2,0x32d11120,261,"ArrayNoArgumentConstructorStub"
+code-creation,Stub,2,0x32d11240,249,"ArrayNoArgumentConstructorStub"
+code-creation,Stub,11,0x32d11340,389,"BinaryOpICStub"
+code-creation,Stub,12,0x32d114e0,122,"CompareICStub"
+code-creation,Stub,13,0x32d11560,124,"CompareNilICStub"
+code-creation,Stub,11,0x32d115e0,405,"BinaryOpICStub"
+code-creation,Stub,2,0x32d11780,553,"FastNewContextStub"
+code-creation,Stub,11,0x32d119c0,357,"BinaryOpICStub"
+code-creation,Handler,3,0x32d11b40,88,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d11ba0,1428,"RecordWriteStub"
+code-creation,Stub,11,0x32d12140,300,"BinaryOpICStub"
+code-creation,Stub,2,0x32d12280,406,"ArraySingleArgumentConstructorStub"
+code-creation,Stub,11,0x32d12420,505,"BinaryOpICStub"
+code-creation,Handler,3,0x32d12620,84,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d12680,164,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d12740,116,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d127c0,446,"ArraySingleArgumentConstructorStub"
+code-creation,Handler,3,0x32d12980,88,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d129e0,393,"BinaryOpICStub"
+code-creation,Stub,2,0x32d12b80,350,"ArgumentsAccessStub"
+code-creation,Handler,3,0x32d12ce0,88,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d12d40,1433,"RecordWriteStub"
+code-creation,Handler,3,0x32d132e0,184,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d133a0,300,"BinaryOpICStub"
+code-creation,Stub,11,0x32d134e0,300,"BinaryOpICStub"
+code-creation,Handler,3,0x32d13620,88,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d13680,244,"StoreFastElementStub"
+code-creation,Stub,2,0x32d13780,1800,"RecordWriteStub"
+code-creation,Stub,2,0x32d13ea0,585,"FastNewContextStub"
+code-creation,Stub,2,0x32d14100,234,"ArgumentsAccessStub"
+code-creation,Stub,2,0x32d14200,418,"ArraySingleArgumentConstructorStub"
+code-creation,Stub,11,0x32d143c0,281,"BinaryOpICStub"
+code-creation,Stub,11,0x32d144e0,377,"BinaryOpICStub"
+code-creation,Stub,14,0x32d14660,93,"ToBooleanStub"
+code-creation,Handler,3,0x32d146c0,208,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d147a0,758,"StoreFastElementStub"
+code-creation,Stub,2,0x32d14aa0,172,"DoubleToIStub"
+code-creation,CallIC,8,0x32d14b60,78,"A call IC from the snapshot"
+code-creation,Handler,3,0x32d14bc0,88,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d14c20,430,"NumberToStringStub"
+code-creation,CallIC,8,0x32d14de0,78,"A call IC from the snapshot"
+code-creation,CallIC,8,0x32d14e40,400,"A call IC from the snapshot"
+code-creation,Handler,3,0x32d14fe0,386,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d15180,1817,"RecordWriteStub"
+code-creation,Stub,2,0x32d158a0,1797,"RecordWriteStub"
+code-creation,Stub,2,0x32d15fc0,233,"FastNewContextStub"
+code-creation,Stub,11,0x32d160c0,300,"BinaryOpICStub"
+code-creation,Stub,2,0x32d16200,740,"NameDictionaryLookupStub"
+code-creation,Stub,11,0x32d16500,301,"BinaryOpICStub"
+code-creation,Handler,3,0x32d16640,208,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d16720,217,"FastNewContextStub"
+code-creation,Stub,2,0x32d16800,1448,"RecordWriteStub"
+code-creation,Handler,3,0x32d16dc0,84,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d16e20,156,"BinaryOpICStub"
+code-creation,Stub,11,0x32d16ec0,172,"BinaryOpICStub"
+code-creation,Handler,3,0x32d16f80,164,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d17040,441,"BinaryOpICStub"
+code-creation,Handler,3,0x32d17200,208,"An IC handler from the snapshot"
+code-creation,CallIC,8,0x32d172e0,78,"A call IC from the snapshot"
+code-creation,CallIC,8,0x32d17340,487,"A call IC from the snapshot"
+code-creation,Stub,2,0x32d17540,445,"FastNewContextStub"
+code-creation,Handler,3,0x32d17700,88,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d17760,417,"BinaryOpICStub"
+code-creation,Stub,11,0x32d17920,493,"BinaryOpICStub"
+code-creation,Stub,11,0x32d17b20,405,"BinaryOpICStub"
+code-creation,Stub,2,0x32d17cc0,202,"JSEntryStub"
+code-creation,Handler,3,0x32d17da0,76,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d17e00,196,"CallFunctionStub"
+code-creation,Stub,2,0x32d17ee0,406,"ArraySingleArgumentConstructorStub"
+code-creation,Stub,11,0x32d18080,94,"BinaryOpICStub"
+code-creation,Stub,2,0x32d180e0,245,"FastNewContextStub"
+code-creation,Stub,2,0x32d181e0,224,"StoreFastElementStub"
+code-creation,Stub,11,0x32d182c0,409,"BinaryOpICStub"
+code-creation,Stub,11,0x32d18460,156,"BinaryOpICStub"
+code-creation,Stub,2,0x32d18500,742,"StoreFastElementStub"
+code-creation,Stub,11,0x32d18800,405,"BinaryOpICStub"
+code-creation,Stub,2,0x32d189a0,236,"StoreFastElementStub"
+code-creation,CallIC,8,0x32d18aa0,487,"A call IC from the snapshot"
+code-creation,Handler,3,0x32d18ca0,192,"An IC handler from the snapshot"
+code-creation,CallIC,8,0x32d18d60,78,"A call IC from the snapshot"
+code-creation,CallIC,8,0x32d18dc0,397,"A call IC from the snapshot"
+code-creation,Stub,2,0x32d18f60,1453,"RecordWriteStub"
+code-creation,Stub,2,0x32d19520,414,"ArrayNArgumentsConstructorStub"
+code-creation,Stub,11,0x32d196c0,94,"BinaryOpICStub"
+code-creation,Stub,11,0x32d19720,220,"BinaryOpICStub"
+code-creation,Stub,2,0x32d19800,309,"CreateAllocationSiteStub"
+code-creation,Stub,2,0x32d19940,1800,"RecordWriteStub"
+code-creation,Stub,12,0x32d1a060,104,"CompareICStub"
+code-creation,CallIC,8,0x32d1a0e0,78,"A call IC from the snapshot"
+code-creation,CallIC,8,0x32d1a140,400,"A call IC from the snapshot"
+code-creation,Stub,11,0x32d1a2e0,301,"BinaryOpICStub"
+code-creation,Stub,2,0x32d1a420,414,"ArrayNArgumentsConstructorStub"
+code-creation,Stub,2,0x32d1a5c0,236,"StoreFastElementStub"
+code-creation,Stub,2,0x32d1a6c0,369,"CallConstructStub"
+code-creation,Handler,3,0x32d1a840,88,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d1a8a0,74,"BinaryOpICWithAllocationSiteStub"
+code-creation,Stub,2,0x32d1a900,834,"BinaryOpWithAllocationSiteStub"
+code-creation,Handler,3,0x32d1ac60,88,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d1acc0,1437,"RecordWriteStub"
+code-creation,Handler,3,0x32d1b260,184,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d1b320,1789,"RecordWriteStub"
+code-creation,Stub,11,0x32d1ba20,305,"BinaryOpICStub"
+code-creation,Stub,2,0x32d1bb60,446,"ArraySingleArgumentConstructorStub"
+code-creation,Stub,14,0x32d1bd20,156,"ToBooleanStub"
+code-creation,Handler,3,0x32d1bdc0,88,"An IC handler from the snapshot"
+code-creation,CallIC,8,0x32d1be20,78,"A call IC from the snapshot"
+code-creation,CallIC,8,0x32d1be80,487,"A call IC from the snapshot"
+code-creation,Stub,11,0x32d1c080,385,"BinaryOpICStub"
+code-creation,Stub,12,0x32d1c220,104,"CompareICStub"
+code-creation,Stub,11,0x32d1c2a0,329,"BinaryOpICStub"
+code-creation,Stub,2,0x32d1c400,330,"InternalArrayNArgumentsConstructorStub"
+code-creation,Stub,2,0x32d1c560,968,"FastCloneShallowArrayStub"
+code-creation,Handler,3,0x32d1c940,88,"An IC handler from the snapshot"
+code-creation,CallIC,8,0x32d1c9a0,78,"A call IC from the snapshot"
+code-creation,Stub,12,0x32d1ca00,104,"CompareICStub"
+code-creation,Handler,3,0x32d1ca80,88,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d1cae0,88,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d1cb40,94,"BinaryOpICStub"
+code-creation,Stub,14,0x32d1cba0,164,"ToBooleanStub"
+code-creation,Stub,11,0x32d1cc60,305,"BinaryOpICStub"
+code-creation,Handler,3,0x32d1cda0,88,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d1ce00,406,"ArraySingleArgumentConstructorStub"
+code-creation,Stub,11,0x32d1cfa0,212,"BinaryOpICStub"
+code-creation,Stub,11,0x32d1d080,300,"BinaryOpICStub"
+code-creation,Stub,11,0x32d1d1c0,156,"BinaryOpICStub"
+code-creation,Stub,11,0x32d1d260,481,"BinaryOpICStub"
+code-creation,Stub,11,0x32d1d460,212,"BinaryOpICStub"
+code-creation,Stub,11,0x32d1d540,308,"BinaryOpICStub"
+code-creation,Handler,3,0x32d1d680,116,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d1d700,405,"BinaryOpICStub"
+code-creation,Stub,11,0x32d1d8a0,300,"BinaryOpICStub"
+code-creation,Handler,3,0x32d1d9e0,88,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d1da40,76,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d1daa0,88,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d1db00,208,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d1dbe0,405,"BinaryOpICStub"
+code-creation,Stub,12,0x32d1dd80,104,"CompareICStub"
+code-creation,LoadIC,6,0x32d1de00,468,"A load IC from the snapshot"
+code-creation,Handler,3,0x32d1dfe0,88,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d1e040,293,"FastNewContextStub"
+code-creation,Stub,11,0x32d1e180,326,"BinaryOpICStub"
+code-creation,Handler,3,0x32d1e2e0,184,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d1e3a0,88,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d1e400,273,"FastNewContextStub"
+code-creation,Stub,11,0x32d1e520,357,"BinaryOpICStub"
+code-creation,Stub,11,0x32d1e6a0,333,"BinaryOpICStub"
+code-creation,Stub,11,0x32d1e800,94,"BinaryOpICStub"
+code-creation,Stub,11,0x32d1e860,212,"BinaryOpICStub"
+code-creation,Stub,11,0x32d1e940,397,"BinaryOpICStub"
+code-creation,CallIC,8,0x32d1eae0,400,"A call IC from the snapshot"
+code-creation,Stub,12,0x32d1ec80,477,"CompareICStub"
+code-creation,Stub,11,0x32d1ee60,277,"BinaryOpICStub"
+code-creation,Stub,11,0x32d1ef80,385,"BinaryOpICStub"
+code-creation,LoadIC,6,0x32d1f120,468,"A load IC from the snapshot"
+code-creation,Handler,3,0x32d1f300,88,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d1f360,113,"An IC handler from the snapshot"
+code-creation,Builtin,4,0x32d1f3e0,85,"LoadIC_Miss"
+code-creation,Handler,3,0x32d1f440,208,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d1f520,208,"An IC handler from the snapshot"
+code-creation,Stub,12,0x32d1f600,104,"CompareICStub"
+code-creation,Stub,2,0x32d1f680,79,"StubFailureTrampolineStub"
+code-creation,Stub,2,0x32d1f6e0,156,"CallConstructStub"
+code-creation,Stub,2,0x32d1f780,312,"TypeofStub"
+code-creation,Handler,3,0x32d1f8c0,88,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d1f920,300,"BinaryOpICStub"
+code-creation,Handler,3,0x32d1fa60,164,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d1fb20,420,"BinaryOpICStub"
+code-creation,Stub,12,0x32d1fce0,116,"CompareICStub"
+code-creation,Stub,11,0x32d1fd60,200,"BinaryOpICStub"
+code-creation,Stub,11,0x32d1fe40,377,"BinaryOpICStub"
+code-creation,Stub,11,0x32d1ffc0,357,"BinaryOpICStub"
+code-creation,Stub,2,0x32d20140,742,"StoreFastElementStub"
+code-creation,CallIC,8,0x32d20440,78,"A call IC from the snapshot"
+code-creation,Stub,2,0x32d204a0,385,"FastNewContextStub"
+code-creation,Stub,2,0x32d20640,209,"FastNewContextStub"
+code-creation,Handler,3,0x32d20720,76,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d20780,301,"BinaryOpICStub"
+code-creation,Handler,3,0x32d208c0,132,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d20960,76,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d209c0,80,"StubFailureTrampolineStub"
+code-creation,Stub,2,0x32d20a20,645,"FastNewContextStub"
+code-creation,Handler,3,0x32d20cc0,88,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d20d20,300,"BinaryOpICStub"
+code-creation,Stub,11,0x32d20e60,405,"BinaryOpICStub"
+code-creation,Stub,2,0x32d21000,558,"FastNewClosureStub"
+code-creation,CallIC,8,0x32d21240,487,"A call IC from the snapshot"
+code-creation,Stub,11,0x32d21440,212,"BinaryOpICStub"
+code-creation,Handler,3,0x32d21520,76,"An IC handler from the snapshot"
+code-creation,Stub,12,0x32d21580,141,"CompareICStub"
+code-creation,Stub,11,0x32d21620,94,"BinaryOpICStub"
+code-creation,Stub,2,0x32d21680,346,"ArrayNArgumentsConstructorStub"
+code-creation,Stub,2,0x32d217e0,369,"FastNewContextStub"
+code-creation,Stub,11,0x32d21960,224,"BinaryOpICStub"
+code-creation,Stub,2,0x32d21a40,249,"InternalArrayNoArgumentConstructorStub"
+code-creation,Stub,2,0x32d21b40,374,"ArrayNArgumentsConstructorStub"
+code-creation,Stub,2,0x32d21cc0,786,"StringAddStub"
+code-creation,Stub,2,0x32d21fe0,237,"FastNewContextStub"
+code-creation,Stub,11,0x32d220e0,425,"BinaryOpICStub"
+code-creation,Stub,13,0x32d222a0,140,"CompareNilICStub"
+code-creation,CallIC,8,0x32d22340,78,"A call IC from the snapshot"
+code-creation,Stub,2,0x32d223a0,525,"MathPowStub"
+code-creation,KeyedLoadIC,7,0x32d225c0,392,"A keyed load IC from the snapshot"
+code-creation,KeyedLoadIC,7,0x32d22760,902,"A keyed load IC from the snapshot"
+code-creation,Stub,2,0x32d22b00,740,"NameDictionaryLookupStub"
+code-creation,Handler,3,0x32d22e00,184,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d22ec0,300,"BinaryOpICStub"
+code-creation,Stub,11,0x32d23000,300,"BinaryOpICStub"
+code-creation,Handler,3,0x32d23140,208,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d23220,281,"BinaryOpICStub"
+code-creation,CallIC,8,0x32d23340,78,"A call IC from the snapshot"
+code-creation,Stub,13,0x32d233a0,164,"CompareNilICStub"
+code-creation,Stub,2,0x32d23460,270,"CallApiGetterStub"
+code-creation,Handler,3,0x32d23580,164,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d23640,300,"BinaryOpICStub"
+code-creation,Stub,2,0x32d23780,257,"FastNewContextStub"
+code-creation,Stub,2,0x32d238a0,713,"FastNewContextStub"
+code-creation,Handler,3,0x32d23b80,88,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d23be0,385,"BinaryOpICStub"
+code-creation,Stub,11,0x32d23d80,172,"BinaryOpICStub"
+code-creation,Stub,11,0x32d23e40,405,"BinaryOpICStub"
+code-creation,Stub,11,0x32d23fe0,493,"BinaryOpICStub"
+code-creation,Stub,11,0x32d241e0,188,"BinaryOpICStub"
+code-creation,Stub,2,0x32d242a0,410,"ArrayNArgumentsConstructorStub"
+code-creation,Stub,2,0x32d24440,558,"FastNewClosureStub"
+code-creation,Stub,2,0x32d24680,758,"StoreFastElementStub"
+code-creation,Stub,11,0x32d24980,301,"BinaryOpICStub"
+code-creation,Stub,11,0x32d24ac0,405,"BinaryOpICStub"
+code-creation,Stub,2,0x32d24c60,249,"InternalArrayNoArgumentConstructorStub"
+code-creation,Handler,3,0x32d24d60,76,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d24dc0,88,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d24e20,405,"BinaryOpICStub"
+code-creation,Stub,2,0x32d24fc0,346,"ArrayNArgumentsConstructorStub"
+code-creation,Handler,3,0x32d25120,76,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d25180,224,"StoreFastElementStub"
+code-creation,Stub,12,0x32d25260,122,"CompareICStub"
+code-creation,Stub,11,0x32d252e0,493,"BinaryOpICStub"
+code-creation,Handler,3,0x32d254e0,88,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d25540,205,"FastNewContextStub"
+code-creation,Stub,12,0x32d25620,453,"CompareICStub"
+code-creation,Stub,11,0x32d25800,361,"BinaryOpICStub"
+code-creation,Handler,3,0x32d25980,88,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d259e0,224,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d25ac0,385,"BinaryOpICStub"
+code-creation,Stub,2,0x32d25c60,154,"CallConstructStub"
+code-creation,Handler,3,0x32d25d00,84,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d25d60,94,"BinaryOpICStub"
+code-creation,Stub,2,0x32d25dc0,166,"InternalArrayConstructorStub"
+code-creation,Stub,2,0x32d25e80,394,"InternalArraySingleArgumentConstructorStub"
+code-creation,Stub,11,0x32d26020,405,"BinaryOpICStub"
+code-creation,Stub,11,0x32d261c0,493,"BinaryOpICStub"
+code-creation,Stub,2,0x32d263c0,154,"ToNumberStub"
+code-creation,Stub,11,0x32d26460,74,"BinaryOpICWithAllocationSiteStub"
+code-creation,Stub,11,0x32d264c0,441,"BinaryOpICStub"
+code-creation,Handler,3,0x32d26680,208,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d26760,88,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d267c0,184,"BinaryOpICStub"
+code-creation,Stub,11,0x32d26880,405,"BinaryOpICStub"
+code-creation,Stub,2,0x32d26a20,202,"JSEntryStub"
+code-creation,Stub,12,0x32d26b00,141,"CompareICStub"
+code-creation,Handler,3,0x32d26ba0,164,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d26c60,430,"ArraySingleArgumentConstructorStub"
+code-creation,Stub,2,0x32d26e20,261,"ArrayNoArgumentConstructorStub"
+code-creation,Stub,11,0x32d26f40,357,"BinaryOpICStub"
+code-creation,Stub,2,0x32d270c0,1453,"RecordWriteStub"
+code-creation,Stub,11,0x32d27680,300,"BinaryOpICStub"
+code-creation,Stub,11,0x32d277c0,405,"BinaryOpICStub"
+code-creation,Stub,11,0x32d27960,420,"BinaryOpICStub"
+code-creation,Handler,3,0x32d27b20,84,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d27b80,734,"SubStringStub"
+code-creation,Stub,11,0x32d27e60,180,"BinaryOpICStub"
+code-creation,Stub,2,0x32d27f20,1433,"RecordWriteStub"
+code-creation,KeyedLoadIC,7,0x32d284c0,401,"A keyed load IC from the snapshot"
+code-creation,Handler,3,0x32d28660,80,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d286c0,94,"BinaryOpICStub"
+code-creation,Handler,3,0x32d28720,88,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d28780,94,"BinaryOpICStub"
+code-creation,Stub,11,0x32d287e0,301,"BinaryOpICStub"
+code-creation,Stub,11,0x32d28920,329,"BinaryOpICStub"
+code-creation,Stub,11,0x32d28a80,94,"BinaryOpICStub"
+code-creation,Handler,3,0x32d28ae0,164,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d28ba0,405,"BinaryOpICStub"
+code-creation,Stub,11,0x32d28d40,309,"BinaryOpICStub"
+code-creation,Stub,2,0x32d28e80,196,"CallFunctionStub"
+code-creation,Stub,2,0x32d28f60,244,"StoreFastElementStub"
+code-creation,Stub,2,0x32d29060,398,"ArrayNArgumentsConstructorStub"
+code-creation,Stub,11,0x32d29200,212,"BinaryOpICStub"
+code-creation,Stub,11,0x32d292e0,493,"BinaryOpICStub"
+code-creation,Stub,11,0x32d294e0,180,"BinaryOpICStub"
+code-creation,Stub,11,0x32d295a0,304,"BinaryOpICStub"
+code-creation,Handler,3,0x32d296e0,88,"An IC handler from the snapshot"
+code-creation,Stub,12,0x32d29740,104,"CompareICStub"
+code-creation,Handler,3,0x32d297c0,422,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d29980,84,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d299e0,357,"BinaryOpICStub"
+code-creation,LoadIC,6,0x32d29b60,468,"A load IC from the snapshot"
+code-creation,Stub,11,0x32d29d40,420,"BinaryOpICStub"
+code-creation,Stub,11,0x32d29f00,94,"BinaryOpICStub"
+code-creation,CallIC,8,0x32d29f60,484,"A call IC from the snapshot"
+code-creation,Handler,3,0x32d2a160,164,"An IC handler from the snapshot"
+code-creation,Stub,13,0x32d2a220,93,"CompareNilICStub"
+code-creation,Stub,2,0x32d2a280,734,"StoreFastElementStub"
+code-creation,Stub,11,0x32d2a560,329,"BinaryOpICStub"
+code-creation,Handler,3,0x32d2a6c0,76,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d2a720,790,"StoreFastElementStub"
+code-creation,CallIC,8,0x32d2aa40,78,"A call IC from the snapshot"
+code-creation,Handler,3,0x32d2aaa0,88,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d2ab00,164,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d2abc0,519,"ArrayConstructorStub"
+code-creation,Stub,11,0x32d2ade0,385,"BinaryOpICStub"
+code-creation,Handler,3,0x32d2af80,88,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d2afe0,208,"An IC handler from the snapshot"
+code-creation,Stub,2,0x32d2b0c0,281,"FastNewContextStub"
+code-creation,Stub,2,0x32d2b1e0,244,"StoreFastElementStub"
+code-creation,Handler,3,0x32d2b2e0,76,"An IC handler from the snapshot"
+code-creation,Stub,11,0x32d2b340,273,"BinaryOpICStub"
+code-creation,StoreIC,9,0x32d2b460,84,"A store IC from the snapshot"
+code-creation,StoreIC,9,0x32d2b4c0,84,"A store IC from the snapshot"
+code-creation,StoreIC,9,0x32d2b520,84,"A store IC from the snapshot"
+code-creation,StoreIC,9,0x32d2b580,84,"A store IC from the snapshot"
+code-creation,Builtin,4,0x32d2b5e0,77,"Illegal"
+code-creation,Builtin,4,0x32d2b640,77,"EmptyFunction"
+code-creation,Builtin,4,0x32d2b6a0,77,"ArrayPush"
+code-creation,Builtin,4,0x32d2b700,77,"ArrayPop"
+code-creation,Builtin,4,0x32d2b760,77,"ArrayShift"
+code-creation,Builtin,4,0x32d2b7c0,77,"ArrayUnshift"
+code-creation,Builtin,4,0x32d2b820,77,"ArraySlice"
+code-creation,Builtin,4,0x32d2b880,77,"ArraySplice"
+code-creation,Builtin,4,0x32d2b8e0,77,"ArrayConcat"
+code-creation,Builtin,4,0x32d2b940,80,"HandleApiCall"
+code-creation,Builtin,4,0x32d2b9a0,80,"HandleApiCallConstruct"
+code-creation,Builtin,4,0x32d2ba00,77,"HandleApiCallAsFunction"
+code-creation,Builtin,4,0x32d2ba60,77,"HandleApiCallAsConstructor"
+code-creation,Builtin,4,0x32d2bac0,77,"RestrictedFunctionPropertiesThrower"
+code-creation,Builtin,4,0x32d2bb20,77,"RestrictedStrictArgumentsPropertiesThrower"
+code-creation,Builtin,4,0x32d2bb80,118,"InOptimizationQueue"
+code-creation,Builtin,4,0x32d2bc00,567,"JSConstructStubGeneric"
+code-creation,Builtin,4,0x32d2be40,182,"JSConstructStubForDerived"
+code-creation,Builtin,4,0x32d2bf00,451,"JSConstructStubApi"
+code-creation,Builtin,4,0x32d2c0e0,570,"JSConstructStubNewTarget"
+code-creation,Builtin,4,0x32d2c320,197,"JSEntryTrampoline"
+code-creation,Builtin,4,0x32d2c400,175,"JSConstructEntryTrampoline"
+code-creation,Builtin,4,0x32d2c4c0,99,"CompileLazy"
+code-creation,Builtin,4,0x32d2c540,104,"CompileOptimized"
+code-creation,Builtin,4,0x32d2c5c0,104,"CompileOptimizedConcurrent"
+code-creation,Builtin,4,0x32d2c640,140,"NotifyDeoptimized"
+code-creation,Builtin,4,0x32d2c6e0,140,"NotifySoftDeoptimized"
+code-creation,Builtin,4,0x32d2c780,140,"NotifyLazyDeoptimized"
+code-creation,Builtin,4,0x32d2c820,94,"NotifyStubFailure"
+code-creation,Builtin,4,0x32d2c880,94,"NotifyStubFailureSaveDoubles"
+code-creation,Builtin,4,0x32d2c8e0,85,"KeyedLoadIC_Miss"
+code-creation,Builtin,4,0x32d2c940,84,"StoreIC_Miss"
+code-creation,Builtin,4,0x32d2c9a0,84,"KeyedStoreIC_Miss"
+code-creation,LoadIC,6,0x32d2ca00,80,"A load IC from the snapshot"
+code-creation,KeyedLoadIC,7,0x32d2ca60,897,"A keyed load IC from the snapshot"
+code-creation,StoreIC,9,0x32d2ce00,82,"A store IC from the snapshot"
+code-creation,KeyedStoreIC,10,0x32d2ce60,84,"A keyed store IC from the snapshot"
+code-creation,KeyedStoreIC,10,0x32d2cec0,84,"A keyed store IC from the snapshot"
+code-creation,KeyedStoreIC,10,0x32d2cf20,2573,"A keyed store IC from the snapshot"
+code-creation,KeyedStoreIC,10,0x32d2d940,84,"A keyed store IC from the snapshot"
+code-creation,KeyedStoreIC,10,0x32d2d9a0,84,"A keyed store IC from the snapshot"
+code-creation,KeyedStoreIC,10,0x32d2da00,2573,"A keyed store IC from the snapshot"
+code-creation,Builtin,4,0x32d2e420,368,"FunctionCall"
+code-creation,Builtin,4,0x32d2e5a0,386,"FunctionApply"
+code-creation,Builtin,4,0x32d2e740,386,"ReflectApply"
+code-creation,Builtin,4,0x32d2e8e0,230,"ReflectConstruct"
+code-creation,Builtin,4,0x32d2e9e0,78,"InternalArrayCode"
+code-creation,Builtin,4,0x32d2ea40,85,"ArrayCode"
+code-creation,Builtin,4,0x32d2eaa0,352,"StringConstructCode"
+code-creation,Builtin,4,0x32d2ec00,117,"OnStackReplacement"
+code-creation,Builtin,4,0x32d2ec80,76,"InterruptCheck"
+code-creation,Builtin,4,0x32d2ece0,102,"OsrAfterStackCheck"
+code-creation,Builtin,4,0x32d2ed60,76,"StackCheck"
+code-creation,Builtin,4,0x32d2edc0,115,"MarkCodeAsToBeExecutedOnce"
+code-creation,Builtin,4,0x32d2ee40,115,"MarkCodeAsExecutedOnce"
+code-creation,Builtin,4,0x32d2eec0,109,"MarkCodeAsExecutedTwice"
+code-creation,Builtin,4,0x32d2ef40,109,"MakeQuadragenarianCodeYoungAgainOddMarking"
+code-creation,Builtin,4,0x32d2efc0,109,"MakeQuadragenarianCodeYoungAgainEvenMarking"
+code-creation,Builtin,4,0x32d2f040,109,"MakeQuinquagenarianCodeYoungAgainOddMarking"
+code-creation,Builtin,4,0x32d2f0c0,109,"MakeQuinquagenarianCodeYoungAgainEvenMarking"
+code-creation,Builtin,4,0x32d2f140,109,"MakeSexagenarianCodeYoungAgainOddMarking"
+code-creation,Builtin,4,0x32d2f1c0,109,"MakeSexagenarianCodeYoungAgainEvenMarking"
+code-creation,Builtin,4,0x32d2f240,109,"MakeSeptuagenarianCodeYoungAgainOddMarking"
+code-creation,Builtin,4,0x32d2f2c0,109,"MakeSeptuagenarianCodeYoungAgainEvenMarking"
+code-creation,Builtin,4,0x32d2f340,109,"MakeOctogenarianCodeYoungAgainOddMarking"
+code-creation,Builtin,4,0x32d2f3c0,109,"MakeOctogenarianCodeYoungAgainEvenMarking"
+code-creation,Handler,3,0x32d2f440,83,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d2f4a0,83,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d2f500,83,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d2f560,83,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d2f5c0,84,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d2f620,84,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d2f680,227,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d2f780,227,"An IC handler from the snapshot"
+code-creation,Handler,3,0x32d2f880,275,"An IC handler from the snapshot"
+code-creation,Builtin,4,0x32d2f9a0,107,"Return_DebugBreak"
+code-creation,Builtin,4,0x32d2fa20,104,"CallFunctionStub_DebugBreak"
+code-creation,Builtin,4,0x32d2faa0,110,"CallConstructStub_DebugBreak"
+code-creation,Builtin,4,0x32d2fb20,114,"CallConstructStub_Recording_DebugBreak"
+code-creation,CallIC,8,0x32d2fba0,106,"A call IC from the snapshot"
+code-creation,Builtin,4,0x32d2fc20,105,"Slot_DebugBreak"
+code-creation,Builtin,4,0x32d2fca0,65,"PlainReturn_LiveEdit"
+code-creation,Builtin,4,0x32d2fd00,93,"FrameDropper_LiveEdit"
+tick,0x77c86bf4,121000,0,0x0,4
+timer-event-start,"V8.GCCompactor",121000
+tick,0x77c86bf4,121000,0,0x0,1
+timer-event-start,"V8.External",121000
+timer-event-end,"V8.External",121000
+timer-event-start,"V8.External",123000
+timer-event-end,"V8.External",123000
+timer-event-end,"V8.GCCompactor",123000
+code-creation,LazyCompile,4,0x32d2b5e0,77,"",0x3a02e320,
+code-creation,LazyCompile,4,0x32d2b5e0,77,"",0x3a02e380,
+code-creation,LazyCompile,4,0x32d2e9e0,78,"InternalArray",0x3a034808,
+code-creation,LazyCompile,4,0x32d2e9e0,78,"InternalPackedArray",0x3a0348b0,
+code-creation,LazyCompile,4,0x32d2ea40,85,"Array",0x3a035e74,
+code-creation,LazyCompile,4,0x32d2b7c0,77,"unshift",0x3a0385a0,
+code-creation,LazyCompile,4,0x32d2b820,77,"slice",0x3a038600,
+code-creation,LazyCompile,4,0x32d2b5e0,77,"OpaqueReference",0x3a04707c,
+code-creation,LazyCompile,4,0x32d2bac0,77,"ThrowTypeError",0x3a048974,
+code-creation,LazyCompile,4,0x32d2e420,368,"call",0x3a048a00,
+code-creation,LazyCompile,4,0x32d2e5a0,386,"apply",0x3a048a74,
+code-creation,LazyCompile,4,0x32d2b640,77," :1:1",0x3a048ad4,
+code-creation,LazyCompile,4,0x32d2b5e0,77,"",0x3a048ba4,
+code-creation,LazyCompile,4,0x32d2b5e0,77,"JSON",0x3a052088,
+code-creation,LazyCompile,4,0x32d2b5e0,77,"Arguments",0x3a0520e8,
+code-creation,LazyCompile,4,0x32d2bb20,77,"ThrowTypeError",0x3a052174,
+code-creation,LazyCompile,4,0x32d2ba00,77,"",0x3a052410,
+code-creation,LazyCompile,4,0x32d2ba60,77,"",0x3a052470,
+code-creation,LazyCompile,4,0x32d2b5e0,77,"",0x3a0524d0,
+code-creation,LazyCompile,4,0x32d2b880,77,"splice",0x3a052a84,
+code-creation,LazyCompile,4,0x32d2b760,77,"shift",0x3a052ae4,
+code-creation,LazyCompile,4,0x32d2b6a0,77,"push",0x3a052b44,
+code-creation,LazyCompile,4,0x32d2b700,77,"pop",0x3a052ba4,
+code-creation,LazyCompile,4,0x32d2b8e0,77,"concat",0x3a052c5c,
+tick,0x77c86bf4,124000,0,0x0,4
+tick,0xfa1060,126000,0,0x0,2
+timer-event-start,"V8.ParseMicroSeconds",126000
+timer-event-end,"V8.ParseMicroSeconds",126000
+timer-event-start,"V8.CompileMicroSeconds",126000
+timer-event-start,"V8.CompileFullCode",126000
+timer-event-start,"V8.CompileFullCode",126000
+timer-event-end,"V8.CompileFullCode",126000
+code-creation,Function,0,0x32d2fd60,380," native harmony-object.js:2:10",0x3a06d460,~
+timer-event-end,"V8.CompileFullCode",126000
+code-creation,Script,0,0x32d2fee0,168,"native harmony-object.js",0x3a06d524,~
+timer-event-end,"V8.CompileMicroSeconds",126000
+timer-event-start,"V8.IcMiss",126000
+timer-event-end,"V8.IcMiss",127000
+timer-event-start,"V8.IcMiss",127000
+timer-event-end,"V8.IcMiss",127000
+timer-event-start,"V8.ParseLazyMicroSeconds",127000
+timer-event-end,"V8.ParseLazyMicroSeconds",127000
+timer-event-start,"V8.CompileFullCode",127000
+timer-event-end,"V8.CompileFullCode",127000
+code-creation,LazyCompile,0,0x32d2ffa0,196,"Import native prologue.js:12:16",0x3a04039c,~
+timer-event-start,"V8.IcMiss",127000
+timer-event-end,"V8.IcMiss",127000
+timer-event-start,"V8.IcMiss",127000
+timer-event-end,"V8.IcMiss",127000
+timer-event-start,"V8.ParseLazyMicroSeconds",127000
+timer-event-end,"V8.ParseLazyMicroSeconds",127000
+timer-event-start,"V8.CompileFullCode",127000
+timer-event-end,"V8.CompileFullCode",127000
+code-creation,LazyCompile,0,0x32d30080,560,"InstallFunctions native prologue.js:41:26",0x3a040644,~
+timer-event-start,"V8.IcMiss",127000
+timer-event-start,"V8.External",127000
+timer-event-end,"V8.External",127000
+timer-event-end,"V8.IcMiss",127000
+timer-event-start,"V8.IcMiss",127000
+timer-event-start,"V8.ParseLazyMicroSeconds",127000
+timer-event-end,"V8.ParseLazyMicroSeconds",128000
+code-disable-optimization,"SAR","Call to a JavaScript runtime function"
+timer-event-start,"V8.CompileFullCode",128000
+timer-event-end,"V8.CompileFullCode",128000
+code-creation,LazyCompile,0,0x32d302c0,548,"SAR native runtime.js:320:17",0x3a0301bc,
+timer-event-end,"V8.IcMiss",128000
+timer-event-start,"V8.IcMiss",128000
+timer-event-start,"V8.External",128000
+timer-event-end,"V8.External",128000
+timer-event-end,"V8.IcMiss",128000
+timer-event-start,"V8.IcMiss",128000
+timer-event-end,"V8.IcMiss",128000
+timer-event-start,"V8.IcMiss",128000
+timer-event-end,"V8.IcMiss",128000
+timer-event-start,"V8.IcMiss",128000
+timer-event-start,"V8.ParseLazyMicroSeconds",128000
+timer-event-end,"V8.ParseLazyMicroSeconds",128000
+code-disable-optimization,"ADD","Call to a JavaScript runtime function"
+timer-event-start,"V8.CompileFullCode",128000
+timer-event-end,"V8.CompileFullCode",128000
+code-creation,LazyCompile,0,0x32d30500,856,"ADD native runtime.js:170:17",0x3a02f4d0,
+timer-event-end,"V8.IcMiss",128000
+timer-event-start,"V8.IcMiss",128000
+timer-event-end,"V8.IcMiss",128000
+timer-event-start,"V8.ParseLazyMicroSeconds",128000
+timer-event-end,"V8.ParseLazyMicroSeconds",128000
+timer-event-start,"V8.CompileFullCode",128000
+tick,0xf8d1e1,128000,0,0x24ef80,2,0xf74e50,0x32d3018d,0x32d2fea9
+timer-event-end,"V8.CompileFullCode",128000
+code-creation,LazyCompile,0,0x32d30860,320,"SetFunctionName native prologue.js:20:25",0x3a040180,~
+timer-event-start,"V8.IcMiss",129000
+timer-event-end,"V8.IcMiss",129000
+timer-event-start,"V8.IcMiss",129000
+timer-event-start,"V8.External",129000
+timer-event-end,"V8.External",129000
+timer-event-end,"V8.IcMiss",129000
+timer-event-start,"V8.ParseLazyMicroSeconds",129000
+timer-event-end,"V8.ParseLazyMicroSeconds",129000
+timer-event-start,"V8.CompileFullCode",129000
+timer-event-end,"V8.CompileFullCode",129000
+code-creation,LazyCompile,0,0x32d309a0,792,"PostExperimentals native prologue.js:139:27",0x3a040bcc,~
+timer-event-start,"V8.ParseLazyMicroSeconds",129000
+timer-event-end,"V8.ParseLazyMicroSeconds",129000
+timer-event-start,"V8.CompileFullCode",129000
+timer-event-end,"V8.CompileFullCode",129000
+code-creation,LazyCompile,0,0x32d30cc0,192," native harmony-object.js:7:18",0x3a06d348,~
+timer-event-start,"V8.IcMiss",129000
+timer-event-end,"V8.IcMiss",129000
+timer-event-start,"V8.IcMiss",129000
+timer-event-end,"V8.IcMiss",129000
+timer-event-start,"V8.ParseLazyMicroSeconds",129000
+timer-event-end,"V8.ParseLazyMicroSeconds",129000
+timer-event-start,"V8.CompileFullCode",129000
+timer-event-end,"V8.CompileFullCode",129000
+code-creation,LazyCompile,0,0x32d30d80,324," native v8natives.js:24:34",0x3a0293b8,~
+timer-event-start,"V8.IcMiss",130000
+timer-event-end,"V8.IcMiss",130000
+timer-event-start,"V8.IcMiss",130000
+timer-event-end,"V8.IcMiss",130000
+timer-event-start,"V8.IcMiss",130000
+timer-event-end,"V8.IcMiss",130000
+timer-event-start,"V8.IcMiss",130000
+timer-event-end,"V8.IcMiss",130000
+timer-event-start,"V8.IcMiss",130000
+timer-event-end,"V8.IcMiss",130000
+timer-event-start,"V8.IcMiss",130000
+timer-event-end,"V8.IcMiss",130000
+timer-event-start,"V8.IcMiss",130000
+timer-event-end,"V8.IcMiss",130000
+timer-event-start,"V8.ParseMicroSeconds",130000
+timer-event-end,"V8.ParseMicroSeconds",130000
+timer-event-start,"V8.CompileMicroSeconds",130000
+timer-event-start,"V8.CompileFullCode",130000
+timer-event-start,"V8.CompileFullCode",130000
+timer-event-end,"V8.CompileFullCode",130000
+code-creation,Function,0,0x32d30ee0,128," native dummy.js:1:10",0x3a06de84,~
+timer-event-end,"V8.CompileFullCode",130000
+code-creation,Script,0,0x32d30f60,168,"native dummy.js",0x3a06df44,~
+timer-event-end,"V8.CompileMicroSeconds",130000
+timer-event-start,"V8.Execute",130000
+timer-event-end,"V8.Execute",130000
+tick,0xe57388,131000,0,0x0,3
+timer-event-start,"V8.CompileScriptMicroSeconds",131000
+timer-event-start,"V8.ParseMicroSeconds",131000
+tick,0xe091e7,133000,0,0x0,2
+timer-event-end,"V8.ParseMicroSeconds",134000
+timer-event-start,"V8.CompileMicroSeconds",134000
+timer-event-start,"V8.CompileFullCode",134000
+timer-event-start,"V8.CompileFullCode",134000
+timer-event-end,"V8.CompileFullCode",134000
+code-creation,Function,0,0x32d31020,2096," node.js:10:10",0x3a07365c,~
+tick,0x77c86bf4,135000,0,0x0,2
+timer-event-end,"V8.CompileFullCode",135000
+code-creation,Script,0,0x32d31860,168,"node.js",0x3a073728,~
+timer-event-end,"V8.CompileMicroSeconds",135000
+timer-event-end,"V8.CompileScriptMicroSeconds",135000
+timer-event-start,"V8.Execute",135000
+timer-event-end,"V8.Execute",135000
+tick,0x77c86bf4,137000,0,0x0,4
+timer-event-start,"V8.Execute",137000
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",138000
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",138000
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",138000
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",138000
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",138000
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",138000
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",138000
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",138000
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",138000
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",138000
+timer-event-start,"V8.ParseLazyMicroSeconds",138000
+timer-event-end,"V8.ParseLazyMicroSeconds",138000
+timer-event-start,"V8.CompileFullCode",138000
+timer-event-end,"V8.CompileFullCode",138000
+code-creation,LazyCompile,0,0x32d31920,1056,"WeakMap native weak-collection.js:8:28",0x3a05089c,~
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",138000
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",138000
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",138000
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",138000
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",138000
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",138000
+timer-event-start,"V8.IcMiss",138000
+timer-event-end,"V8.IcMiss",139000
+timer-event-start,"V8.IcMiss",139000
+timer-event-end,"V8.IcMiss",139000
+timer-event-start,"V8.IcMiss",139000
