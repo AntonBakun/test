@@ -1,0 +1,28 @@
+var ord =require('./datamodel');
+//require('./datamodel'); ///new collection orders model
+
+var newOrders = new ord.orderline ({
+    AdressFrom:'советская 44',
+    AdressTo:'суворова 96к3',
+    Phone:'336739460',
+    Name: 'jon doe',
+    Vechile:'легковая',
+    Discription:'бар матрикс',
+    OrderStatus:'wait',
+    DateTime: new Date().toLocaleString()
+});
+
+
+var newOrdersDisp = new ord.dispatcher ({
+    AdressFrom:'советская 44',
+    AdressTo:'суворова 96к3',
+    Phone:'336739460',
+    Name: 'jon doe',
+    Vechile:'легковая',
+    Discription:'бар матрикс',
+    OrderStatus:'wait',
+    DateTime: new Date().toLocaleString()
+});
+
+module.exports.newRec = { 1: newOrders , 2: newOrdersDisp};
+
