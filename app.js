@@ -5,10 +5,9 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var routes = require('./routes/index');
-var users = require('./routes/users');
-//require('babel-core');
-//var db = require('./conectionDb');
+var routes = require('./app/index');
+var users = require('./app/users');
+var port = process.env.PORT || 8080;
 var app = express();
 
 //app.set('port',5000);
@@ -29,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
-app.use('/users', users);
+app.use('/users', routes);
 //app.use('/',db);
 
 // catch 404 and forward to error handler
@@ -63,6 +62,7 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+app.listen(port);
 
 
 module.exports = app;
