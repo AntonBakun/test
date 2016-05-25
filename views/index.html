@@ -164,72 +164,47 @@
 			<div class="col-sm-12">
 				<div class="col-sm-6">
 					<h3>Booking Form</h3>
-					<form class="form-horizontal">
+					<form class="form-horizontal" id="OrderForm">
 						<div class="col-sm-6">
 							<div class="form-group">
-								<input class="form-control" name="Name" placeHolder="Name:" type="text" ng-model="name">
+								<input class="form-control" name="Name" placeHolder="Name:" type="text" ng-model="user.username">
 							</div>
 							<div class="form-group">
-								<input class="form-control" name="From" placeHolder="From:" type="text" ng-model="from">
+								<input class="form-control" name="From" placeHolder="From:" type="text" ng-model="user.adrfrom">
 							</div>
 						</div>
 						<div class="col-sm-6">
 							<div class="form-group">
-								<input class="form-control" name="Phone" placeHolder="Phone:" type="text" ng-model="phone">
+								<input class="form-control" name="Phone" placeHolder="Phone:" type="text" ng-model="user.phone">
 							</div>
 							<div class="form-group ">
-								<input class="form-control" name="To" placeHolder="To:" type="text" ng-model="to">
+								<input class="form-control" name="To" placeHolder="To:" type="text" ng-model="user.adrto">
 							</div>
 						</div>
 						<div class="col-sm-12">
 							<div class="form-group">
-							<label class="col-sm-4 control-label" for="radios"></label>
-								<label class="radio-inline">
-									<input c type="radio" name="radios-0" id="radios-0" value="bus" ng-model="bus"> Bus
-								</label>
-								<label class="radio-inline">
-									<input type="radio" name="radios-1" id="radios-1" value="car" ng-model="car">Car
-								</label>
-							</div>
-
-						</div>
-						<!--
-						<div class="col-sm-6">
-							<div class="form-group">
-								<div class="col-sm-8 control-label">
-									<label for="pass">Number Of Passengers</label>
-								</div>
-								<div class="col-sm-4">
-									<select class="form-control">
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-										<option>5</option>
-										<option>6</option>
+								<label class="col-md-4 control-label" for="select">Select type of vehicle </label>
+								<div class="col-md-8">
+									<select ng-model="user.vehicle" name="select" class="form-control">
+										<option value="Car">Car</option>
+										<option value="Bus">Bus</option>
 									</select>
 								</div>
 							</div>
+
 						</div>
-						!-->
 						<div class="col-sm-12">
 							<div class="form-group">
-								<textarea class="form-control" name="Message" placeHolder="Please input more information about your location" ng-model="description"></textarea>
+								<textarea class="form-control" name="Message" placeHolder="Please input more information about your location" ng-model="user.adrdescription"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-sm-offset-9 col-sm-3">
-								<button type="submit" class="btn btn-success" class="collapse"> Order Now! </button>
+								<button type="submit" class="btn btn-success" class="collapse" ng-click="update(user)"> Order Now! </button>
 							</div>
 						</div>
-						<div class="col-sm-12">
-							<p>From:{{from}}</p>
-							<p>To:{{to}}</p>
-							<p>Phone:{{phone}}</p>
-							<p>Name:{{name}}</p>
-							<p>vehicle:{{vehicle}}</p>
-							<p>Message:{{description}}</p>
-						</div>
+						<pre>user = {{user | json}}</pre>
+						<pre>master = {{newOrder | json}}</pre>
 					</form>
 				</div>
 				<div class="col-sm-6">
