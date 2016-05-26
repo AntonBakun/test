@@ -123,3 +123,9 @@
         margin-right: 0;
     }
 }
+
+.fixed {
+    min-height: 200px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
