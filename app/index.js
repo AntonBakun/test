@@ -7,7 +7,7 @@ var io = require('socket.io').listen(5000);
 io.sockets.on('connection', function (socket) {
     console.log('socket works');
     socket.on('connect',function (){console.log('connect on')})
-    socket.emit('New Order', {lol:'its work'});
+    socket.emit('newOrder', { lol: 'its work' });
 });
 mongoose.connect(database.url);
 var db = mongoose.connection;
@@ -49,7 +49,8 @@ router.post('/orderform',function(req,res){
         } else {
             console.log('save good rec');
             console.log(newOrders);
-
+            io.emit('send to all');
+            io.emit('newOrder', newOrders);
         }
     });
 
