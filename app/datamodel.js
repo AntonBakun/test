@@ -10,17 +10,14 @@ var mongoose = require('mongoose');
   OrderStatus:String,
    DateTime:String
 });
- var dispatcherSchema = mongoose.Schema({
-   AdressFrom: String,
-   AdressTo: String,
+ var ContactUsSchema = mongoose.Schema({
    Name: String,
-   Phone: Number,
-   Vechile: String,
+   Email: String,
    Discription: String,
-   OrderStatus: String,
-   DateTime: String
+     DateTime:String
 });
+
 var Orders = mongoose.model('orders',ordersSchema);
-var Dispatchers = mongoose.model('dispatchers',dispatcherSchema);
+var ContactUs = mongoose.model('contactUs',ContactUsSchema);
 module.exports.orderline = Orders;///new collection orders model;
-module.exports.dispatcher = Dispatchers;///new collection dispatcherSchema model;
+module.exports.ContactUs = ContactUs;///new collection dispatcherSchema model;

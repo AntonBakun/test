@@ -10,6 +10,7 @@ var users = require('./app/users');
 var port = process.env.PORT || 8080;
 var app = express();
 
+
 //app.set('port',5000);
 //http.createServer(app).listen(app.get('port'),function callback () {
 //  console.log('Express server listening on port  '+ app.get('port'));
@@ -33,10 +34,10 @@ app.use('/users', routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  //res.render('Not Found'+ err.status);
-  next(err);
+    var err = new Error('Not Found');
+    err.status = 404;
+    //res.render('Not Found'+ err.status);
+    next(err);
 });
 
 // error handlers
@@ -44,25 +45,26 @@ app.use(function(req, res, next) {
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
-  app.use(function(err, req, res, next) {
-    res.status(err.status || 500).send(JSON.stringify(err));
-    res.render('error', {
-      message: err.message,
-      error: err
+    app.use(function(err, req, res, next) {
+        res.status(err.status || 500).send(JSON.stringify(err));
+        res.render('error', {
+            message: err.message,
+            error: err
+        });
     });
-  });
 }
 
 // production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
-  res.status(err.status || 500).send(JSON.stringify(err));
-  res.render('error', {
-    message: err.message,
-    error: {}
-  });
+    res.status(err.status || 500).send(JSON.stringify(err));
+    res.render('error', {
+        message: err.message,
+        error: {}
+    });
 });
 app.listen(port);
 
 
 module.exports = app;
+
