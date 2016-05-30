@@ -23,10 +23,10 @@ var ord =require('./datamodel');
 
 
 /* GET home page. */
-router.get('/taxi', function(req, res, next) {
+router.get('/your-online-taxi', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-router.get('/taxi.admin', function(req, res, next) {
+router.get('/taxi-admin', function(req, res, next) {
     res.render('admin', { title: 'Express' });
 });
 

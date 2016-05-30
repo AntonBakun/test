@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="adminPanel">
 
 <head>
 
@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Anton Bakun">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <title>Admin panel</title>
+    <!-- socket.io.js -->
+    <script src="http://localhost:5000/socket.io/socket.io.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
@@ -22,12 +24,16 @@
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <script src="javascripts/adminfunc.js"></script>
     <![endif]-->
+    <!-- Custom JS -->
+    <script src="javascripts/angular/angular.min.js"></script>
 
-</head>
+    <script src="javascripts/adminFunction.js"></script>
 
-<body>
+
+</head >
+
+<body ng-controller="orderBoard" >
 
     <div id="wrapper">
 
@@ -40,7 +46,7 @@
                     </a>
                 </li>
                 <li class=""sidebar">
-                    <span class="badge" >0</span>
+                    <span class="badge" >{{countOrders}}</span>
                     <h4>Orders</h4>
                 </li>
             </ul>
@@ -57,93 +63,30 @@
                                 <div class="panel panel-primary ">
                                     <div class="panel-heading">Orders panel</div>
                                     <div class="panel-body fixed " >
-                                        <table class="table table-inverse">
-                                            <tr>
-                                                <th>Orders phone</th>
-                                                <th>name</th>
-                                                <th>status</th>
-                                            </tr>
-                                            <tr>
-                                                <td>+3753365489 </td>
-                                                <td>Oleg</td>
-                                                <td>in process/new</td>
-                                            </tr>
-                                            <tr>
-                                            <td>+3753365489 </td>
-                                            <td>Oleg</td>
-                                            <td>in process/new</td>
-                                        </tr>
-                                            <tr>
-                                                <td>+3753365489 </td>
-                                                <td>Oleg</td>
-                                                <td>in process/new</td>
-                                            </tr>
-                                            <tr>
-                                                <td>+3753365489 </td>
-                                                <td>Oleg</td>
-                                                <td>in process/new</td>
-                                            </tr>
-                                            <tr>
-                                                <td>+3753365489 </td>
-                                                <td>Oleg</td>
-                                                <td>in process/new</td>
-                                            </tr>
-                                            <tr>
-                                                <td>+3753365489 </td>
-                                                <td>Oleg</td>
-                                                <td>in process/new</td>
-                                            </tr>
-                                            <tr>
-                                                <td>+3753365489 </td>
-                                                <td>Oleg</td>
-                                                <td>in process/new</td>
-                                            </tr>
-                                            <tr>
-                                                <td>+3753365489 </td>
-                                                <td>Oleg</td>
-                                                <td>in process/new</td>
-                                            </tr>
-                                            <tr>
-                                                <td>+3753365489 </td>
-                                                <td>Oleg</td>
-                                                <td>in process/new</td>
-                                            </tr>
-                                            <tr>
-                                                <td>+3753365489 </td>
-                                                <td>Oleg</td>
-                                                <td>in process/new</td>
-                                            </tr>
-                                            <tr>
-                                                <td>+3753365489 </td>
-                                                <td>Oleg</td>
-                                                <td>in process/new</td>
-                                            </tr>
-                                            <tr>
-                                                <td>+3753365489 </td>
-                                                <td>Oleg</td>
-                                                <td>in process/new</td>
-                                            </tr>
-                                            <tr>
-                                                <td>+3753365489 </td>
-                                                <td>Oleg</td>
-                                                <td>in process/new</td>
-                                            </tr>
-                                            <tr>
-                                                <td>+3753365489 </td>
-                                                <td>Oleg</td>
-                                                <td>in process/new</td>
-                                            </tr>
-                                            <tr>
-                                                <td>+3753365489 </td>
-                                                <td>Oleg</td>
-                                                <td>in process/new</td>
-                                            </tr>
-                                        </table>
+                                        <div class="col-md-12" ng-repeat="order in orders">
+                                            <div class="bs-calltoaction bs-calltoaction-primary">
+                                                <div class="row">
+                                                    <div class="col-md-9 cta-contents">
+                                                        <h1 class="cta-title">Order N-phone:{{order.online.Phone}}</h1>
+                                                        <div class="cta-desc">
+                                                            <p>From:{{order.online.AdressFrom}}.</p>
+                                                            <p>To:{{order.online.AdressTo}}.</p>
+                                                            <p>Vechile:{{order.online.Vechile}}.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 cta-button">
+                                                        <a href="#" class="btn btn-lg btn-block btn-primary">Go for Driver!</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="panel-footer">Panel footer</div>
                                 </div>
                             </div>
                         </div>
+                        <pre>user = {{orders | json}}</pre>
+                        <pre>master = {{id | json}}</pre>
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
                         <input type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" value = "New Order" >
                     </div>
@@ -226,8 +169,6 @@
 
     <!-- jQuery -->
     <script src="javascripts/jquery.js"></script>
-    <script src="http://localhost:5000/socket.io/socket.io.js"></script>
-    <script src="javascripts/adminfunc.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="javascripts/bootstrap.min.js"></script>
 
