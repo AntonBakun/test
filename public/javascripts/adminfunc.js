@@ -25,3 +25,7 @@ socket.on('newOrder', function(data) {
     //});
     //setInterval()
 //socket();
+
+<p>From:{{order.online.AdressFrom}}.</p>
+<p>To:{{order.online.AdressTo}}.</p>
+<p>Vechile:{{order.online.Vechile}}.</p>

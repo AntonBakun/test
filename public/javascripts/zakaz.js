@@ -2,14 +2,15 @@
  * Created by BAKUN on 29.02.2016.
  */
 
-var app = angular.module('myApp',  []);
-app.controller('myOrder', function ($scope,$http) {
+var app = angular.module('myApp',  ['ngAnimate','toastr']);
+app.controller('myOrder', function ($scope,$http,toastr) {
 
-	$scope.newOrder = {orderstatusadr:'0'
+	$scope.newOrder = {orderstatusadr:'wait'
 		};
 	$scope.contactUs = {};
 
 	$scope.update = function(user) {
+		toastr.success('Your order in process.Expect 15 minutes, to you SMS with brand and number of the car will come.Thank you that used our service.','Hello',{progressBar:true , positionClass:'toast-top-full-width'});
 		$scope.newOrder = angular.copy(user);
 		//console.log($scope.newOrder);
 		var data = $scope.newOrder;
@@ -36,6 +37,7 @@ app.controller('myOrder', function ($scope,$http) {
 	};
 
 	$scope.send =  function(user){
+		toastr.success('Your message send,we are contact you','Hello',{progressBar:true , positionClass:'toast-top-full-width'});
 		$scope.contactUs = angular.copy(user);
 		var contact = $scope.contactUs;
 		$http.post('/contactus', contact)

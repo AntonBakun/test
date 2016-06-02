@@ -32,6 +32,7 @@ Admin.controller('orderBoard',function($scope,socket){
     $scope.id  = 0;
     $scope.orders = [{}];
     $scope.countOrders = 0;
+    $scope.new = {};
 
     socket.on('newOrder', function(data) {
         console.log('socket.io data', data);
@@ -40,7 +41,18 @@ Admin.controller('orderBoard',function($scope,socket){
         $scope.orders.unshift({online:data});
     });
 
+    $scope.update = function(adminOrder){
+        $scope.new = angular.copy(adminOrder);
+        var data = $scope.new;
+        socket.emit('adminOrder',data,function (){
+            console.log(data);
+        });
 
+    };
+
+    $scope.sendToDriver = function (driver){
+
+    };
 });
 
 

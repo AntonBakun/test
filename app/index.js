@@ -6,8 +6,27 @@ var io = require('socket.io').listen(5000);
 
 io.sockets.on('connection', function (socket) {
     console.log('socket works');
-    socket.on('connect',function (){console.log('connect on')})
-    socket.emit('newOrder', { lol: 'its work' });
+    socket.on('adminOrder',function(data){
+        var Order = new ord.orderline ({
+            AdressFrom: data.adrfrom,
+            AdressTo:data.adrto,
+            Phone: data.phone,
+            Name: data.username,
+            Vechile:data.vehicle,
+            Discription:data.adrdescription,
+            OrderStatus:'done',
+            DateTime: new Date().toLocaleString()
+        });
+        Order.save(function (err) {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log('save good rec');
+                console.log(Order);
+            }
+        });
+    })
+
 });
 mongoose.connect(database.url);
 var db = mongoose.connection;
@@ -30,6 +49,7 @@ router.get('/taxi-admin', function(req, res, next) {
     res.render('admin', { title: 'Express' });
 });
 
+
 router.post('/orderform',function(req,res){
     console.log(req.body);
     var newOrders = new ord.orderline ({
@@ -39,7 +59,7 @@ router.post('/orderform',function(req,res){
         Name: req.body.username,
         Vechile:req.body.vehicle,
         Discription:req.body.adrdescription,
-        OrderStatus:req.body.orderstatusadr,
+        OrderStatus:'wait',
         DateTime: new Date().toLocaleString()
     });
     var data = req.body;

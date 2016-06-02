@@ -239,3 +239,9 @@
 .bs-calltoaction.bs-calltoaction-danger .cta-button .btn{
     border-color:#fff;
 }
+
+.fixed-ord {
+    min-height: 50px;
+    max-height: 100px;
+    overflow-y: scroll;
+}

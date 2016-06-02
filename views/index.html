@@ -19,6 +19,7 @@
 	<link href="stylesheets/business-frontpage.css" rel="stylesheet">
 	<link  href="stylesheets/font-awesome.min.css" rel="stylesheet">
 	<link  href="stylesheets/fontello.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://npmcdn.com/angular-toastr/dist/angular-toastr.css" />
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -32,7 +33,10 @@
 	<script src="javascripts/bootstrap.min.js"></script>
 	<!-- AngularJs -->
 	<script src="javascripts/angular/angular.min.js"></script>
+	<script src="javascripts/angular/angular-animate.min.js"></script>
+	<script src="https://npmcdn.com/angular-toastr/dist/angular-toastr.tpls.js"></script>
 	<script src="javascripts/zakaz.js"></script>
+
 
 </head>
 
@@ -72,10 +76,9 @@
 
 	<!-- Image Background Page Header -->
 	<!-- Note: The background image is set within the business-casual.css file. -->
-	<header class="business-header">
+	<header class="business-header hidden-xs hidden-sm">
 		<div class="container-fluid">
-			<br>
-			<div class="row">
+			<div class="row ">
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
@@ -111,6 +114,7 @@
 				</div>
 			</div>
 		</div>
+
 	</header>
 
 	<!-- Page Content -->
@@ -143,7 +147,7 @@
 			</div>
 		</div>
 		<br>
-		<div class="colordiv">
+		<div class="colordiv hidden-xs hidden-sm">
 
 			<div class="row">
 
@@ -172,21 +176,21 @@
 			<div class="col-sm-12">
 				<div class="col-sm-6">
 					<h3>Booking Form</h3>
-					<form class="form-horizontal" id="OrderForm">
+					<form class="form-horizontal" id="OrderForm" >
 						<div class="col-sm-6">
 							<div class="form-group">
-								<input class="form-control" name="Name" placeHolder="Name:" type="text" ng-model="user.username">
+								<input class="form-control"  data-toggle="tooltip" data-placement="top" title="Example: Ivan Ivanov" name="Name" placeHolder="Name:" type="text" ng-model="user.username"  ng-minlength="3" ng-maxlength="20" required>
 							</div>
 							<div class="form-group">
-								<input class="form-control" name="From" placeHolder="From:" type="text" ng-model="user.adrfrom">
+								<input class="form-control" data-toggle="tooltip" data-placement="top" title="Example: Suvorova 93-5" name="From" placeHolder="From:" type="text"  ng-model="user.adrfrom">
 							</div>
 						</div>
 						<div class="col-sm-6">
 							<div class="form-group">
-								<input class="form-control" name="Phone" placeHolder="Phone:" type="text" ng-model="user.phone">
+								<input class="form-control" data-toggle="tooltip" data-placement="top" title="Example: +375(33) 144 89 09" name="Phone" placeHolder="Phone:" type="text" ng-model="user.phone">
 							</div>
 							<div class="form-group ">
-								<input class="form-control" name="To" placeHolder="To:" type="text" ng-model="user.adrto">
+								<input class="form-control" name="To" data-toggle="tooltip" data-placement="top" title="Example: Moskovskaya 289-10" placeHolder="To:" type="text" ng-model="user.adrto">
 							</div>
 						</div>
 						<div class="col-sm-12">
@@ -203,16 +207,14 @@
 						</div>
 						<div class="col-sm-12">
 							<div class="form-group">
-								<textarea class="form-control" name="Message" placeHolder="Please input more information about your location" ng-model="user.adrdescription"></textarea>
+								<textarea class="form-control" data-toggle="tooltip" data-placement="top" title="Example: Input more information about your location" name="Message" placeHolder="Please input more information about your location" ng-model="user.adrdescription"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-sm-offset-9 col-sm-3">
-								<button type="submit" class="btn btn-success" class="collapse" ng-click="update(user)"> Order Now! </button>
+								<button type="submit" class="btn btn-success" class="collapse"   ng-click="update(user)"> Order Now! </button>
 							</div>
 						</div>
-						<pre>user = {{user | json}}</pre>
-						<pre>master = {{newOrder | json}}</pre>
 					</form>
 				</div>
 				<div class="col-sm-6">
@@ -260,6 +262,12 @@
 								<div class=""><img src="images/logo.png" width="126" height="61" alt=""></div>
 								&copy; 2016 | <a href="#">Privacy Policy</a> </div> Website designed by
 						</div>
+
+						<script>
+							$(document).ready(function(){
+								$('[data-toggle="tooltip"]').tooltip();
+							});
+						</script>
 
 						<div class="col-sm-6" align="left">
 							<a class="btn btn-social-icon btn-md btn-vk">
