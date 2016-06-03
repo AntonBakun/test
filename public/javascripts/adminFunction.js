@@ -1,4 +1,4 @@
-var Admin = angular.module('adminPanel',[]);
+var Admin = angular.module('adminPanel',['ngAnimate','toastr']);
 
 Admin.factory('socket', function ($rootScope){
 
@@ -27,7 +27,7 @@ Admin.factory('socket', function ($rootScope){
 
 
 
-Admin.controller('orderBoard',function($scope,socket){
+Admin.controller('orderBoard',function($scope,socket,toastr){
 
     $scope.id  = 0;
     $scope.orders = [{}];
@@ -35,6 +35,7 @@ Admin.controller('orderBoard',function($scope,socket){
     $scope.new = {};
 
     socket.on('newOrder', function(data) {
+        toastr.warning('came a new order','New online order',{autoDismiss:false , positionClass:'toast-top-full-width'});
         console.log('socket.io data', data);
         $scope.id = $scope.id + 1;
         $scope.countOrders = $scope.countOrders + 1;
