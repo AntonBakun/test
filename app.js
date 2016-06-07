@@ -7,17 +7,13 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var routes = require('./app/index');
 var users = require('./app/users');
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
 var port = process.env.PORT || 8080;
 var app = express();
 
 
-//app.set('port',5000);
-//http.createServer(app).listen(app.get('port'),function callback () {
-//  console.log('Express server listening on port  '+ app.get('port'));
-//});
-// view engine setup
-//app.set('views', path.join(__dirname, 'views'));
-//app.set('view engine', 'jade');
+
 app.set('views', path.join( __dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
@@ -27,10 +23,24 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(require('express-session')({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', routes);
-//app.use('/',db);
+
+// passport config
+var Account = require('./app/account');
+passport.use(new LocalStrategy(Account.authenticate()));
+passport.serializeUser(Account.serializeUser());
+passport.deserializeUser(Account.deserializeUser());
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

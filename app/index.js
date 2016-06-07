@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 var database = require('./config/database');
+var passport = require('passport');
+var Account = require('./account');
 var io = require('socket.io').listen(5000);
 
 io.sockets.on('connection', function (socket) {
@@ -39,17 +41,80 @@ db.once('open', function callback (){
 var ord =require('./datamodel');
 
 
-
-
-/* GET home page. */
-router.get('/your-online-taxi', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+/*var newUserRole = new ord.role({
+    Username:'AntonBakun',
+    Role:'Admin'
 });
+newUserRole.save(function (err) {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log('Add new user to role list');
+        console.log(newUserRole);
+
+    }
+}); */
+
+
+/* GET home page. */ //without authentication
+router.get('/', function(req, res, next) {
+  res.render('index', {  user : req.user });
+});
+// regestration
+router.get('/register', function(req, res) {
+    res.render('register', { });
+});
+///new user
+router.post('/register', function(req, res, next) {
+        Account.register(new Account({ username : req.body.username }), req.body.password, function(err, account) {
+            if (err) {
+                return res.render("register", {info: "Sorry. That username already exists. Try again."});
+
+            }
+
+        passport.authenticate('local')(req, res, function () {
+            req.session.save(function (err) {
+                if (err) {
+                    return next(err);
+                }
+                var newUserRole = new ord.role({
+                    Username:req.body.username,
+                    Role:'User'
+                });
+                newUserRole.save(function (err) {
+                    if (err) {
+                        console.log(err);
+                    } else {
+                        console.log('Add new user to role list');
+                        console.log(newUserRole);
+
+                    }
+                });
+                res.redirect('/');
+            });
+        });
+    });
+});
+
+router.get('/login', function(req, res) {
+    res.render('login');
+});
+
+router.post('/login', passport.authenticate('local'), function(req, res) {
+    res.redirect('/');
+});
+
+router.get('/logout', function(req, res) {
+    req.logout();
+    console.log('user logout :',req.user);
+    res.redirect('/');
+});
+
 router.get('/taxi-admin', function(req, res, next) {
     res.render('admin', { title: 'Express' });
 });
 
-
+//new order
 router.post('/orderform',function(req,res){
     console.log(req.body);
     var newOrders = new ord.orderline ({
@@ -77,7 +142,7 @@ router.post('/orderform',function(req,res){
 
     res.end("success");
 });
-
+//new contact
 router.post('/contactus',function(req,res){
     console.log(req.body);
     var newContactUS = new ord.ContactUs ({
