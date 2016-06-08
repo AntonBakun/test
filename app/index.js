@@ -58,16 +58,24 @@ newUserRole.save(function (err) {
 
 /* GET home page. */ //without authentication
 router.get('/', function(req, res, next) {
-  res.render('index', {  user : req.user});
+    if(req.user){
+        ord.role.findOne({'Username':req.user.username},function(err,roles){
+           req.user.__v = roles.Role;
+            res.render('index', {  user : req.user});
+            console.log(req.user);
+        });
+    }
+    else {
+        res.render('index', {user: req.user});
 
-    console.log(req.session);
-    console.log(req.user);
+        console.log(req.session);
+        console.log(req.user);
 
-
+    }
 });
 // regestration
 router.get('/register', function(req, res) {
-    res.render('register');
+    res.render('register',{info:''});
 });
 ///new user
 router.post('/register', function(req, res, next) {
@@ -85,7 +93,7 @@ router.post('/register', function(req, res, next) {
                 }
                 var newUserRole = new ord.role({
                     Username:req.body.username,
-                    Role:'User'
+                    Role:'0'
                 });
                 newUserRole.save(function (err) {
                     if (err) {
@@ -118,7 +126,6 @@ router.post('/login', passport.authenticate('local'), function(req, res) {
 
 router.get('/logout', function(req, res) {
     req.logout();
-    console.log('user logout :',req.session);
     res.redirect('/');
 });
 
@@ -136,6 +143,7 @@ router.post('/orderform',function(req,res){
         Name: req.body.username,
         Vechile:req.body.vehicle,
         Discription:req.body.adrdescription,
+        Username:'',
         OrderStatus:'wait',
         DateTime: new Date().toLocaleString()
     });

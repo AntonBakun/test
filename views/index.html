@@ -64,11 +64,20 @@
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li ><p>You are currently logged in as #{user.username}</p></li>
+
+					<% if (!user) { %>
 					<li><a href="/register"><span class="glyphicon glyphicon-user"></span> Register</a></li>
 					<li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-
+					<% } else { %>
+					<h4>Wellcome <%=user.username %></h4>
+					<li><a href="/profile"><span class="glyphicon glyphicon-user"></span>Profile </a></li>
 					<li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+					<% } %>
+					<% if (user) { %>
+					<% if (user.__v==1) { %>
+					<li><a href="/taxi-admin">Admin Panel</a></li>
+					<% } %>
+					<% } %>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->

@@ -20,7 +20,8 @@ var mongoose = require('mongoose');
 
 var RoleSchema= mongoose.Schema({
     Username:String,
-    Role:String
+    Role:Number,
+    Email:String
 });
 var Rol = mongoose.model('role',RoleSchema);
 var Orders = mongoose.model('orders',ordersSchema);
