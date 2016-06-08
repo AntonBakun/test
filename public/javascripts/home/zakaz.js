@@ -2,8 +2,8 @@
  * Created by BAKUN on 29.02.2016.
  */
 
-var app = angular.module('myApp',  ['ngAnimate','toastr']);
-app.controller('myOrder', function ($scope,$http,toastr) {
+var app = angular.module('myApp',  ['ngAnimate','toastr','ngCookies']);
+app.controller('myOrder', function ($scope,$http,toastr,$cookies) {
 
 	$scope.newOrder = {orderstatusadr:'wait'
 		};
@@ -67,9 +67,7 @@ app.controller('myOrder', function ($scope,$http,toastr) {
 
 	$scope.reset();
 
-	$http.get('/').success(function(data) {
-		$scope.user= data;
-	});
+
 
 
 

@@ -58,11 +58,16 @@ newUserRole.save(function (err) {
 
 /* GET home page. */ //without authentication
 router.get('/', function(req, res, next) {
-  res.render('index', {  user : req.user });
+  res.render('index', {  user : req.user});
+
+    console.log(req.session);
+    console.log(req.user);
+
+
 });
 // regestration
 router.get('/register', function(req, res) {
-    res.render('register', { });
+    res.render('register');
 });
 ///new user
 router.post('/register', function(req, res, next) {
@@ -74,6 +79,7 @@ router.post('/register', function(req, res, next) {
 
         passport.authenticate('local')(req, res, function () {
             req.session.save(function (err) {
+                //console.log(req.session);
                 if (err) {
                     return next(err);
                 }
@@ -101,12 +107,18 @@ router.get('/login', function(req, res) {
 });
 
 router.post('/login', passport.authenticate('local'), function(req, res) {
-    res.redirect('/');
+    req.session.save(function (err) {
+        console.log(req.session);
+        if (err) {
+            return next(err);
+        }
+        res.redirect('/');
+    });
 });
 
 router.get('/logout', function(req, res) {
     req.logout();
-    console.log('user logout :',req.user);
+    console.log('user logout :',req.session);
     res.redirect('/');
 });
 

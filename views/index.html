@@ -34,6 +34,7 @@
 	<!-- AngularJs -->
 	<script src="javascripts/angular/angular.min.js"></script>
 	<script src="javascripts/angular/angular-animate.min.js"></script>
+	<script src="javascripts/angular/angular-cookies.min.js"></script>
 	<script src="https://npmcdn.com/angular-toastr/dist/angular-toastr.tpls.js"></script>
 	<script src="javascripts/home/zakaz.js"></script>
 
@@ -63,7 +64,7 @@
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li ><p>You are currently logged in as {{user.username}}</p></li>
+					<li ><p>You are currently logged in as #{user.username}</p></li>
 					<li><a href="/register"><span class="glyphicon glyphicon-user"></span> Register</a></li>
 					<li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 
