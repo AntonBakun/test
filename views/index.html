@@ -377,7 +377,7 @@
       </div>
       <div class="modal-body">
         <img src="" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
-                    <h3 class="media-heading"> <%= user.username %> <small></small></h3>
+                    <h3 class="media-heading"><% if (user) { %> <%= user.username %> <% } %> <small></small></h3>
                     <span><strong>Bonus scores: </strong></span>
                         <span class="label label-info">0</span><br>
                          <span><strong>Role: </strong></span>

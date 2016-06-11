@@ -61,16 +61,12 @@ router.get('/', function(req, res, next) {
     if(req.user){
         ord.role.findOne({'Username':req.user.username},function(err,roles){
            req.user.__v = roles.Role;
-            res.render('index', {  user : req.user});
+            res.render('index', { user : req.user});
             console.log(req.user);
         });
     }
     else {
         res.render('index', {user: req.user});
-
-        console.log(req.session);
-        console.log(req.user);
-
     }
 });
 // regestration
@@ -130,7 +126,18 @@ router.get('/logout', function(req, res) {
 });
 
 router.get('/taxi-admin', function(req, res, next) {
-    res.render('admin', { title: 'Express' });
+    if(req.user){
+        ord.role.findOne({'Username':req.user.username},function(err,roles){
+             if(roles.Role==1) {
+                 res.render('admin', {title: 'Express'});
+                 console.log(req.user);
+             }
+            else{
+                 res.json('You haven not permission to access this page');
+             }
+        });
+    }
+
 });
 
 //new order
